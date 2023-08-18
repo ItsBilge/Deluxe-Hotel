@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fefbd8;
+}
+
+/* -----------------navbar--------------- */
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 0.9rem;
+}
+.links a:hover{
+    border-bottom: 2px solid chocolate;
+    opacity: 0.9;
+}
+.links ul {
+    list-style: none;
+    display: flex;
+}
+.links li {
+    padding: 0 1.6rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding: 1rem;
+    background-color: rgb(120, 120, 120);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    opacity: 0.8;
+}
+.links {
+    display: flex;
+}
+.logo span {
+    color: chocolate !important; 
+}
+
+/* -------------header services-------- */
+#header{
+    background-image: url(/css-hotel/bg-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+#header .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 1.6rem;
+    gap: 1rem;
+}
+.content .btn {
+    padding: 1rem;
+    border: 1px solid ;
+    border-radius: 0.5rem;
+    background-color: #3838f5;
+}
+.content .btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.main-header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+.main-header * {
+    z-index: 5;
+}
+.icon{
+    text-align: center;
+    padding: 3rem;
+}
+.more {
+    display: flex;
+}
+.icon i {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #3838f5;
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+.icon h2{
+    padding: 1rem;
+}
+
+/* ---------------------about-------- */
+#about {
+    display: flex;
+    margin-top: 4rem;
+}
+#about .row{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    flex: 1;
+}
+.cnt{
+    background-color: rgb(120, 120, 120);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    font-size: 1.6rem;
+    gap: 1rem;
+    padding: 3rem;    
+}
+.about1 img{
+    height: 100%;
+    width: 100%;
+}
+.cnt .btn {
+    background-color:rgb(120, 120, 120) ;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* ------------------gallery----------- */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+    padding: 4rem;
+    width: 100%;
+}
+.section-header h2{
+    padding: 2rem;
+    font-size: 4rem;
+}
+.flex-grid .gallerys {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .4rem;
+}
+.flex-grid .gallery-1{
+    flex: 25%;
+    padding: 0 .4rem;
+}
+.flex-grid img{
+    width: 102%
+}
+.flex-grid img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+/* --------------------rooms------------------ */
+
+#room {
+    display: flex;
+}
+.rooms .room-1 img {
+    width: 100%;
+    display: flex;
+}
+#room .room-1 {
+    padding: 0 .5rem;
+    margin: 2rem 3rem;
+}
+#room .room-1 nav {
+    text-align: center;
+    background-color: orange;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+#room .room-1 h2{
+    padding: 1rem;
+}
+/* -------------teams------------ */
+
+.teams {
+    display: flex;
+}
+.teams .team {
+    margin: 3rem;
+}
+.teams .team  img{
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+}
+.teams .team img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.teams .team nav{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+ 
+/* ------------contant----------- */
+
+.contact-form {
+    width: 100%;
+    padding: 2rem 0;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: .5rem;
+}
+.contact-form input {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #f5f5f5;
+}
+.flex-colums .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.flex-colums .column {
+    flex: 1;
+}
+.flex-colums .column .column-1
+.flex-colums .column .column-2 {
+    height: 100%;
+}
+.flex-colums .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+}
+.flex-colums img {
+    width: 100%;
+    height: 100%;
+}
+.flex-colums .content {
+    margin-top: 2rem;
+}
+.flex-colums .content .btn{
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+}
+.flex-colums .column-2 h2{
+    font-size: 4rem;
+}
+
+/* -----------------footer---------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+footer a {
+    margin-right: 1rem;
+}
+footer .icons i {
+    font-size: 3rem;
+    color: red;
+}
+footer a:hover{
+    opacity: 0.6;
+}
+footer p{
+    display: flex;
+}
+
+/* --------------media-------------- */
+
+@media (max-width:760px){
+    html{
+        font-size: 9px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 10rem;
+    }
+    .links {
+        margin: auto;
+    }
+    .more {
+        flex-direction: column;
+    }
+    #about .row{
+        flex-direction: column;
+    }
+    .flex-reverce .row{
+        flex-direction: column;
+    }
+    .flex-grid .gallery-1{
+        flex: 50%;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .teams .team img{
+        width: 80%;
+    }
+    #room{
+        flex-wrap: wrap;
+    }
+}
